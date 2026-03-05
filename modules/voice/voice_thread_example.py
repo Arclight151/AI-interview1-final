@@ -94,13 +94,15 @@ def voice_worker(rate=16000):
     final_avg = (sum(scores) / len(scores)) if scores else 0.0
     final_fb = last_feedback or "음성 피드백 없음"
 
-    print("\n==============================", flush=True)
-    print("       VOICE 최종 결과", flush=True)
-    print("==============================", flush=True)
+    #print("\n==============================", flush=True)
+    #print("       VOICE 최종 결과", flush=True)
+    #print("==============================", flush=True)
+    print("================================================")
+    print("- 음성 분야 평가 결과 -")
     print(f"음성 평균 점수 : {final_avg:.1f} 점", flush=True)
     print("음성 피드백:", flush=True)
     print(f"- {final_fb}", flush=True)
-    print("==============================\n", flush=True)
+    #print("==============================\n", flush=True)
 
     print("Voice Thread Stopped", flush=True)
 

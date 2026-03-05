@@ -267,6 +267,8 @@ def expression_worker(padding=20, analyze_every_n_frames=3):
 
     # RUNNING=False로 루프가 끝난 뒤에만 1회 출력
     if last_au_score_total is not None:
+        print("================================================")
+        print("- 표정 분야 평가 결과 -")
         print("최종 AU 점수: ", last_au_score_total)
         print(expression_text_feedback(last_au_score_total))
 

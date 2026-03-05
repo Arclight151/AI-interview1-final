@@ -84,8 +84,10 @@ def main():
     start_hands_thread()
     start_voice_thread()
 
-    print("\nAI Mock Interview — Main Started (q 또는 X로 종료)\n")
-    print("키 안내: [c] 시선 보정  |  [n] 다음 질문  |  [q] 종료\n")
+    print("================================================")
+    print("AI Mock Interview — Main Started (q 또는 X로 종료)\n")
+    print("키 안내: [c] 시선 보정  |  [n] 다음 질문  |  [q] 종료")
+    print("================================================\n")
 
     latest_pose = None
     latest_gaze = None

@@ -93,7 +93,9 @@ def pose_worker():
         else:
             final_fb = last_feedback or "자세 피드백 없음"
 
-    print("POSE 최종 결과", flush=True)
+    print("================================================")
+    print("- 자세 분야 평가 결과 -")
+    #print("POSE 최종 결과", flush=True)
     print(f"자세 평균 점수 : {final_avg:.1f} 점", flush=True)
     print("자세 피드백:", flush=True)
     print(f"- {final_fb}", flush=True)
